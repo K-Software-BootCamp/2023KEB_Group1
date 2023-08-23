@@ -1,6 +1,6 @@
 # 🚗2023KEB_Group1 VectorMen
 <div align="center">
- <img src="./Images/Logo.png" width="300">
+ <img src="./Images/Logo.png" width="540">
 </div>
 
 - 차량 제어 및 통신 통합 시험, 검증 시스템입니다.
@@ -22,12 +22,15 @@
 - Unity, MATLAB/Simulink UDP Socket을 통해 송수신 [127.0.0.1:25000]
 
 <div align="center">
- <img src="./Images/Document1.png" width="300">
+ <img src="./Images/Document1.png" width="540">
 </div>
 
 
 ## ⏲️ 개발 기간
 - 23.07.24일 - 23.08.23일
+<div align="center">
+ <img src="./Images/V.png" width="540">
+</div>
 
 
 ## 👪 멤버 구성
@@ -80,10 +83,10 @@
 ### Jira
 <https://kebvector.atlassian.net/jira/software/projects/VT/boards/1/timeline>
 <div align="center">
- <img src="./Images/jira1.png" width="638">
+ <img src="./Images/jira1.png" width="540">
 </div>
 <div align="center">
- <img src="./Images/jira2.png" width="638">
+ <img src="./Images/jira2.png" width="540">
 </div>
 
 
