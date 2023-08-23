@@ -1,15 +1,15 @@
 # 🚗2023KEB_Group1 VectorMen
-<center>
+<div align="center">
  <img src="./Images/Logo.png" width="300">
-</center>
-차량 제어 및 통신 통합 시험, 검증 시스템입니다.
-사용자는 해당 시스템을 통해 실제 차량에 적용되는 차량 네트워크와 제어기들의 작동을 시험 및 검증할 수 있습니다.
+</div>
+- 차량 제어 및 통신 통합 시험, 검증 시스템입니다.
+- 사용자는 해당 시스템을 통해 실제 차량에 적용되는 차량 네트워크와 제어기들의 작동을 시험 및 검증할 수 있습니다.
 
 
 ## 🐕‍🦺 개 요
-<center>
+<div align="center">
  <img src="./Images/Demo_gif.gif" width="540">
-</center>
+</div>
 
 - MBD기반 Simulink 제어 Model 구축 (PMSM모터, 에커만 스티어링 etc)
 - CANoe를 통한 가상 제어기 구현 및 메시지, 시그널 설정 > 통신 시스템 검증 (1 Channel CAN Protocol)
@@ -20,9 +20,9 @@
 - CANoe Vector I/O 라이브러리를 통해 MATLAB/Simulink와 데이터 송수신
 - Unity, MATLAB/Simulink UDP Socket을 통해 송수신 [127.0.0.1:25000]
 
-<center>
+<div align="center">
  <img src="./Images/Document1.png" width="300">
-</center>
+</div>
 
 
 ## ⏲️ 개발 기간
@@ -78,13 +78,12 @@
 
 ### Jira
 <https://kebvector.atlassian.net/jira/software/projects/VT/boards/1/timeline>
-<center>
+<div align="center">
  <img src="./Images/jira1.png" width="638">
-</center>
-<center>
+</div>
+<div align="center">
  <img src="./Images/jira2.png" width="638">
-</center>
-
+</div>
 
 
 ## Acknowledgement
