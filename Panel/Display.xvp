@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<Panel Type="Vector.CANalyzer.Panels.PanelSerializer, Vector.CANalyzer.Panels.Serializer, Version=17.2.88.0, Culture=neutral, PublicKeyToken=null">
+  <Object Type="Vector.CANalyzer.Panels.Runtime.Panel, Vector.CANalyzer.Panels.Common, Version=17.2.88.0, Culture=neutral, PublicKeyToken=null" Name="Panel" Children="Controls" ControlName="Display">
+    <Object Type="Vector.CANalyzer.Panels.Design.SwitchControl, Vector.CANalyzer.Panels.CommonControls, Version=17.2.88.0, Culture=neutral, PublicKeyToken=null" Name="SwitchControl3" ControlName="SwitchControl3">
+      <Property Name="Name">SwitchControl3</Property>
+      <Property Name="Size">144, 104</Property>
+      <Property Name="Location">297, 247</Property>
+      <Property Name="StateCnt">8</Property>
+      <Property Name="SwitchValues">1;8;0;1;2;3;4;5;6;7</Property>
+      <Property Name="SwitchValuesRx">1;8;0;1;2;3;4;5;6;7</Property>
+      <Property Name="SwitchValuesVT">1;8;0/Lower/0;1/Lower/1;2/Lower/2;3/Lower/3;4/Lower/4;5/Lower/5;6/Lower/6;7/Lower/7</Property>
+      <Property Name="SwitchValuesVTXml">&lt;Version&gt;2&lt;/Version&gt;&lt;Count&gt;8&lt;/Count&gt;&lt;RxValue&gt;0&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;0&lt;/TxValue&gt;&lt;RxValue&gt;1&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;1&lt;/TxValue&gt;&lt;RxValue&gt;2&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;2&lt;/TxValue&gt;&lt;RxValue&gt;3&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;3&lt;/TxValue&gt;&lt;RxValue&gt;4&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;4&lt;/TxValue&gt;&lt;RxValue&gt;5&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;5&lt;/TxValue&gt;&lt;RxValue&gt;6&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;6&lt;/TxValue&gt;&lt;RxValue&gt;7&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;7&lt;/TxValue&gt;</Property>
+      <Property Name="ImageFile">Bitmaps\VCarFlashingLightLeft.bmp</Property>
+      <Property Name="SymbolConfiguration">8;16;Control;;;LightControl;1;;;-1;;;;;;0</Property>
+      <Property Name="TabIndex">3</Property>
+      <Property Name="ReadOnlyControl">True</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.SwitchControl, Vector.CANalyzer.Panels.CommonControls, Version=17.2.88.0, Culture=neutral, PublicKeyToken=null" Name="SwitchControl2" ControlName="SwitchControl2">
+      <Property Name="Name">SwitchControl2</Property>
+      <Property Name="Size">52, 132</Property>
+      <Property Name="Location">101, 209</Property>
+      <Property Name="StateCnt">8</Property>
+      <Property Name="SwitchValues">1;8;0;1;2;3;4;5;6;7</Property>
+      <Property Name="SwitchValuesRx">1;8;0;1;2;3;4;5;6;7</Property>
+      <Property Name="SwitchValuesVT">1;8;0/Lower/0;1/Lower/1;2/Lower/2;3/Lower/3;4/Lower/4;5/Lower/5;6/Lower/6;7/Lower/7</Property>
+      <Property Name="SwitchValuesVTXml">&lt;Version&gt;2&lt;/Version&gt;&lt;Count&gt;8&lt;/Count&gt;&lt;RxValue&gt;0&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;0&lt;/TxValue&gt;&lt;RxValue&gt;1&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;1&lt;/TxValue&gt;&lt;RxValue&gt;2&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;2&lt;/TxValue&gt;&lt;RxValue&gt;3&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;3&lt;/TxValue&gt;&lt;RxValue&gt;4&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;4&lt;/TxValue&gt;&lt;RxValue&gt;5&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;5&lt;/TxValue&gt;&lt;RxValue&gt;6&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;6&lt;/TxValue&gt;&lt;RxValue&gt;7&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;7&lt;/TxValue&gt;</Property>
+      <Property Name="ImageFile">Bitmaps\VCarFlashingLightRight.bmp</Property>
+      <Property Name="SymbolConfiguration">8;16;Control;;;LightControl;1;;;-1;;;;;;0</Property>
+      <Property Name="TabIndex">2</Property>
+      <Property Name="ReadOnlyControl">True</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.PictureBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=17.2.88.0, Culture=neutral, PublicKeyToken=null" Name="PictureBoxControl1" ControlName="PictureBoxControl1">
+      <Property Name="Name">PictureBoxControl1</Property>
+      <Property Name="Size">600, 451</Property>
+      <Property Name="Location">43, 21</Property>
+      <Property Name="ImageFile">Bitmaps\VCar.bmp</Property>
+    </Object>
+    <Property Name="Name">Panel</Property>
+    <Property Name="Size">751, 514</Property>
+    <Property Name="BackColor">72, 74, 87</Property>
+  </Object>
+</Panel>

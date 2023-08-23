@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<Panel Type="Vector.CANalyzer.Panels.PanelSerializer, Vector.CANalyzer.Panels.Serializer, Version=17.2.88.0, Culture=neutral, PublicKeyToken=null">
+  <Object Type="Vector.CANalyzer.Panels.Runtime.Panel, Vector.CANalyzer.Panels.Common, Version=17.2.88.0, Culture=neutral, PublicKeyToken=null" Name="Panel" Children="Controls" ControlName="steering">
+    <Object Type="Vector.CANalyzer.Panels.Design.AnalogGaugeControl, Vector.CANalyzer.Panels.AnalogGauge, Version=17.2.88.0, Culture=neutral, PublicKeyToken=null" Name="AnalogGaugeControl3" ControlName="Analog Gauge 3">
+      <Property Name="Name">AnalogGaugeControl3</Property>
+      <Property Name="Size">225, 180</Property>
+      <Property Name="Location">314, 27</Property>
+      <Property Name="BackgroundColor">White</Property>
+      <Property Name="CriticalProps" Member="AAEAAAD/////AQAAAAAAAAAEAQAAAC9TeXN0ZW0uUmVmbGVjdGlvbi5NZW1iZXJJbmZvU2VyaWFsaXphdGlvbkhvbGRlcgcAAAAETmFtZQxBc3NlbWJseU5hbWUJQ2xhc3NOYW1lCVNpZ25hdHVyZQpTaWduYXR1cmUyCk1lbWJlclR5cGUQR2VuZXJpY0FyZ3VtZW50cwEBAQEBAAMIDVN5c3RlbS5UeXBlW10GAgAAAAUuY3RvcgYDAAAAXFZlY3Rvci5DQU5hbHl6ZXIuUGFuZWxzLkFuYWxvZ0dhdWdlLCBWZXJzaW9uPTE3LjIuODguMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsBgQAAAA2VmVjdG9yLkNBTmFseXplci5QYW5lbHMuRGVzaWduLkdhdWdlQ3JpdGljYWxQcm9wZXJ0aWVzBgUAAAAyVm9pZCAuY3RvcihEb3VibGUsIERvdWJsZSwgRG91YmxlLCBEb3VibGUsIERvdWJsZSkGBgAAAFAuY3RvcihTeXN0ZW0uRG91YmxlLCBTeXN0ZW0uRG91YmxlLCBTeXN0ZW0uRG91YmxlLCBTeXN0ZW0uRG91YmxlLCBTeXN0ZW0uRG91YmxlKQEAAAAKCw==">
+        <Argument>-40</Argument>
+        <Argument>40</Argument>
+        <Argument>0</Argument>
+        <Argument>-40</Argument>
+        <Argument>40</Argument>
+      </Property>
+      <Property Name="GaugeFont">굴림, 9pt</Property>
+      <Property Name="CurrentPosition">0</Property>
+      <Property Name="LowerRangeLimit">-40</Property>
+      <Property Name="UpperRangeLimit">40</Property>
+      <Property Name="ScaleMin">-40</Property>
+      <Property Name="ScaleMax">40</Property>
+      <Property Name="SymbolConfiguration">8;16;Output;;;FRW_angle;1;;;-1;;;;;;0</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.AnalogGaugeControl, Vector.CANalyzer.Panels.AnalogGauge, Version=17.2.88.0, Culture=neutral, PublicKeyToken=null" Name="AnalogGaugeControl2" ControlName="Analog Gauge 2">
+      <Property Name="Name">AnalogGaugeControl2</Property>
+      <Property Name="Size">225, 180</Property>
+      <Property Name="Location">35, 27</Property>
+      <Property Name="BackgroundColor">White</Property>
+      <Property Name="CriticalProps" Member="AAEAAAD/////AQAAAAAAAAAEAQAAAC9TeXN0ZW0uUmVmbGVjdGlvbi5NZW1iZXJJbmZvU2VyaWFsaXphdGlvbkhvbGRlcgcAAAAETmFtZQxBc3NlbWJseU5hbWUJQ2xhc3NOYW1lCVNpZ25hdHVyZQpTaWduYXR1cmUyCk1lbWJlclR5cGUQR2VuZXJpY0FyZ3VtZW50cwEBAQEBAAMIDVN5c3RlbS5UeXBlW10GAgAAAAUuY3RvcgYDAAAAXFZlY3Rvci5DQU5hbHl6ZXIuUGFuZWxzLkFuYWxvZ0dhdWdlLCBWZXJzaW9uPTE3LjIuODguMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsBgQAAAA2VmVjdG9yLkNBTmFseXplci5QYW5lbHMuRGVzaWduLkdhdWdlQ3JpdGljYWxQcm9wZXJ0aWVzBgUAAAAyVm9pZCAuY3RvcihEb3VibGUsIERvdWJsZSwgRG91YmxlLCBEb3VibGUsIERvdWJsZSkGBgAAAFAuY3RvcihTeXN0ZW0uRG91YmxlLCBTeXN0ZW0uRG91YmxlLCBTeXN0ZW0uRG91YmxlLCBTeXN0ZW0uRG91YmxlLCBTeXN0ZW0uRG91YmxlKQEAAAAKCw==">
+        <Argument>-40</Argument>
+        <Argument>40</Argument>
+        <Argument>0</Argument>
+        <Argument>-40</Argument>
+        <Argument>40</Argument>
+      </Property>
+      <Property Name="GaugeFont">굴림, 9pt</Property>
+      <Property Name="CurrentPosition">0</Property>
+      <Property Name="LowerRangeLimit">-40</Property>
+      <Property Name="UpperRangeLimit">40</Property>
+      <Property Name="ScaleMin">-40</Property>
+      <Property Name="ScaleMax">40</Property>
+      <Property Name="SymbolConfiguration">8;16;Output;;;FLW_angle;1;;;-1;;;;;;0</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.AnalogGaugeControl, Vector.CANalyzer.Panels.AnalogGauge, Version=17.2.88.0, Culture=neutral, PublicKeyToken=null" Name="AnalogGaugeControl1" ControlName="Analog Gauge 1">
+      <Property Name="Name">AnalogGaugeControl1</Property>
+      <Property Name="Size">225, 180</Property>
+      <Property Name="Location">173, 261</Property>
+      <Property Name="BackgroundColor">White</Property>
+      <Property Name="CriticalProps" Member="AAEAAAD/////AQAAAAAAAAAEAQAAAC9TeXN0ZW0uUmVmbGVjdGlvbi5NZW1iZXJJbmZvU2VyaWFsaXphdGlvbkhvbGRlcgcAAAAETmFtZQxBc3NlbWJseU5hbWUJQ2xhc3NOYW1lCVNpZ25hdHVyZQpTaWduYXR1cmUyCk1lbWJlclR5cGUQR2VuZXJpY0FyZ3VtZW50cwEBAQEBAAMIDVN5c3RlbS5UeXBlW10GAgAAAAUuY3RvcgYDAAAAXFZlY3Rvci5DQU5hbHl6ZXIuUGFuZWxzLkFuYWxvZ0dhdWdlLCBWZXJzaW9uPTE3LjIuODguMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsBgQAAAA2VmVjdG9yLkNBTmFseXplci5QYW5lbHMuRGVzaWduLkdhdWdlQ3JpdGljYWxQcm9wZXJ0aWVzBgUAAAAyVm9pZCAuY3RvcihEb3VibGUsIERvdWJsZSwgRG91YmxlLCBEb3VibGUsIERvdWJsZSkGBgAAAFAuY3RvcihTeXN0ZW0uRG91YmxlLCBTeXN0ZW0uRG91YmxlLCBTeXN0ZW0uRG91YmxlLCBTeXN0ZW0uRG91YmxlLCBTeXN0ZW0uRG91YmxlKQEAAAAKCw==">
+        <Argument>-127</Argument>
+        <Argument>127</Argument>
+        <Argument>0</Argument>
+        <Argument>-127</Argument>
+        <Argument>127</Argument>
+      </Property>
+      <Property Name="GaugeFont">굴림, 9pt</Property>
+      <Property Name="CurrentPosition">0</Property>
+      <Property Name="LowerRangeLimit">-127</Property>
+      <Property Name="UpperRangeLimit">127</Property>
+      <Property Name="ScaleMin">-127</Property>
+      <Property Name="ScaleMax">127</Property>
+      <Property Name="SymbolConfiguration">8;16;Input;;;Steer_state;1;;;-1;;;;;;0</Property>
+    </Object>
+    <Property Name="Name">Panel</Property>
+    <Property Name="Size">580, 501</Property>
+    <Property Name="BackColor">White</Property>
+  </Object>
+</Panel>

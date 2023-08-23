@@ -1,0 +1,117 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: RR_Wheel RL_Wheel FR_Wheel FL_Wheel PanelCtr SubCtr MainCtr Veh_Sim
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ STR_state : 0|8@0- (1,0) [-128|127] "" Vector__XXX
+ SG_ BRK_rate : 0|4@0+ (1,0) [0|15] "" Vector__XXX
+
+BO_ 0 Test_message: 4 Veh_Sim
+
+BO_ 512 Ctr: 8 MainCtr
+ SG_ Main_RW_rpm : 55|14@0+ (1,0) [0|15000] "RPM"  RR_Wheel,RL_Wheel
+ SG_ Main_FRW_ang : 37|8@0- (1,0) [-127|127] "¡Æ"  PanelCtr
+ SG_ Main_FLW_ang : 29|8@0- (1,0) [-127|127] "¡Æ"  PanelCtr
+
+BO_ 256 Sim_1: 2 Veh_Sim
+ SG_ STR_state : 15|8@0- (1,0) [-128|127] ""  PanelCtr,SubCtr,MainCtr
+ SG_ BRK_rate : 3|4@0+ (1,0) [0|15] ""  PanelCtr,RR_Wheel,RL_Wheel,FR_Wheel,FL_Wheel
+ SG_ ACC_rate : 7|4@0+ (1,0) [0|15] ""  PanelCtr,MainCtr
+
+BO_ 272 Accel_Error_Condition: 1 Veh_Sim
+ SG_ Acc_Err_state : 7|1@0+ (1,0) [0|1] ""  PanelCtr,MainCtr,SubCtr
+
+BO_ 768 Sub_Ctr: 6 SubCtr
+ SG_ Sub_RW_rpm : 23|14@0+ (1,0) [0|15000] "RPM" Vector__XXX
+ SG_ Sub_FRW_ang : 15|8@0- (1,0) [-127|127] "¡Æ" Vector__XXX
+ SG_ Sub_FLW_ang : 7|8@0- (-1,0) [-127|127] "¡Æ"  PanelCtr
+
+
+
+EV_ EnvKlemme30: 0 [0|1] "" 1 1 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ EnvKlemme15: 0 [0|1] "" 0 2 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+BA_DEF_  "MultiplexExtEnabled" ENUM  "No","Yes";
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 65535;
+BA_DEF_ SG_  "NWM-WakeupAllowed" ENUM  "No","Yes";
+BA_DEF_ BO_  "NmMessage" ENUM  "no","yes";
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BU_  "NmNode" ENUM  "no","yes";
+BA_DEF_ BU_  "NmStationAddress" INT 0 63;
+BA_DEF_  "NmBaseAddress" HEX 1024 1087;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 50000;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 50000;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 1000;
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 999999;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cyclic","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed","IfActive","NoMsgSendType","NotUsed","vector_leerstring";
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 100000;
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed";
+BA_DEF_ SG_  "GenSigStartValue" FLOAT 0 100000000000;
+BA_DEF_DEF_  "MultiplexExtEnabled" "No";
+BA_DEF_DEF_  "NodeLayerModules" "CANoeILNLVector.dll";
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "NWM-WakeupAllowed" "";
+BA_DEF_DEF_  "NmMessage" "no";
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "NmNode" "no";
+BA_DEF_DEF_  "NmStationAddress" 0;
+BA_DEF_DEF_  "NmBaseAddress" 1024;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "BusType" "";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenMsgSendType" "NoMsgSendType";
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenSigSendType" "Cyclic";
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_ "GenMsgCycleTime" BO_ 0 200;
+BA_ "GenMsgSendType" BO_ 0 0;
+BA_ "GenMsgCycleTime" BO_ 512 200;
+BA_ "GenMsgSendType" BO_ 512 0;
+BA_ "GenMsgCycleTime" BO_ 256 200;
+BA_ "GenMsgSendType" BO_ 256 0;
+BA_ "GenMsgCycleTime" BO_ 272 200;
+BA_ "GenMsgSendType" BO_ 272 0;
+BA_ "GenMsgCycleTime" BO_ 768 200;
+BA_ "GenSigStartValue" SG_ 272 Acc_Err_state 0;
+BA_ "GenSigStartValue" SG_ 768 Sub_FLW_ang -0;
+

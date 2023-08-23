@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<Panel Type="Vector.CANalyzer.Panels.PanelSerializer, Vector.CANalyzer.Panels.Serializer, Version=17.2.88.0, Culture=neutral, PublicKeyToken=null">
+  <Object Type="Vector.CANalyzer.Panels.Runtime.Panel, Vector.CANalyzer.Panels.Common, Version=17.2.88.0, Culture=neutral, PublicKeyToken=null" Name="Panel" Children="Controls" ControlName="ErrorControl">
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=17.2.88.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl2" Children="Controls" ControlName="Static Text 2">
+      <Property Name="Name">StaticTextControl2</Property>
+      <Property Name="Size">28, 12</Property>
+      <Property Name="Location">226, 55</Property>
+      <Property Name="Text">ABS</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=17.2.88.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl1" Children="Controls" ControlName="Static Text 1">
+      <Property Name="Name">StaticTextControl1</Property>
+      <Property Name="Size">41, 12</Property>
+      <Property Name="Location">71, 55</Property>
+      <Property Name="Text">급발진</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=17.2.88.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl2" ControlName="LED Control 2">
+      <Property Name="Name">LEDControl2</Property>
+      <Property Name="Size">72, 72</Property>
+      <Property Name="Location">208, 90</Property>
+      <Property Name="SwitchValuesVTXml">&lt;Version&gt;2&lt;/Version&gt;&lt;Count&gt;2&lt;/Count&gt;&lt;RxValue&gt;0&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;0&lt;/TxValue&gt;&lt;Color&gt;Gray&lt;/Color&gt;&lt;RxValue&gt;1&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;1&lt;/TxValue&gt;&lt;Color&gt;Red&lt;/Color&gt;</Property>
+      <Property Name="SymbolConfiguration">8;16;Output;;;errorIndicator02;1;;;-1;;;;;;0</Property>
+      <Property Name="TabIndex">2</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=17.2.88.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl1" ControlName="LED Control 1">
+      <Property Name="Name">LEDControl1</Property>
+      <Property Name="Size">72, 72</Property>
+      <Property Name="Location">60, 90</Property>
+      <Property Name="SwitchValuesVTXml">&lt;Version&gt;2&lt;/Version&gt;&lt;Count&gt;2&lt;/Count&gt;&lt;RxValue&gt;0&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;0&lt;/TxValue&gt;&lt;Color&gt;Gray&lt;/Color&gt;&lt;RxValue&gt;1&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;1&lt;/TxValue&gt;&lt;Color&gt;Red&lt;/Color&gt;</Property>
+      <Property Name="SymbolConfiguration">8;16;Output;;;errorIndicator01;1;;;-1;;;;;;0</Property>
+      <Property Name="TabIndex">2</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.TrackBarControl, Vector.CANalyzer.Panels.CommonControls, Version=17.2.88.0, Culture=neutral, PublicKeyToken=null" Name="TrackBarControl2" Children="Controls" ControlName="Track Bar 2">
+      <Property Name="Name">TrackBarControl2</Property>
+      <Property Name="Size">106, 47</Property>
+      <Property Name="Location">184, 19</Property>
+      <Property Name="MaximumSize">100000, 47</Property>
+      <Property Name="Maximum">1</Property>
+      <Property Name="LargeChange">1</Property>
+      <Property Name="LargeChangeDouble">1</Property>
+      <Property Name="MaximumDouble">1</Property>
+      <Property Name="SymbolConfiguration">8;16;Input;;;Error_state;1;;;-1;;;;;;0</Property>
+      <Property Name="TabIndex">1</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.TrackBarControl, Vector.CANalyzer.Panels.CommonControls, Version=17.2.88.0, Culture=neutral, PublicKeyToken=null" Name="TrackBarControl1" Children="Controls" ControlName="Track Bar 1">
+      <Property Name="Name">TrackBarControl1</Property>
+      <Property Name="Size">106, 47</Property>
+      <Property Name="Location">36, 19</Property>
+      <Property Name="MaximumSize">100000, 47</Property>
+      <Property Name="Maximum">1</Property>
+      <Property Name="LargeChange">1</Property>
+      <Property Name="LargeChangeDouble">1</Property>
+      <Property Name="MaximumDouble">1</Property>
+      <Property Name="SymbolConfiguration">8;16;Input;;;auto_onoff;1;;;-1;;;;;;0</Property>
+      <Property Name="TabIndex">0</Property>
+    </Object>
+    <Property Name="Name">Panel</Property>
+    <Property Name="Size">337, 185</Property>
+    <Property Name="BackColor">White</Property>
+  </Object>
+</Panel>

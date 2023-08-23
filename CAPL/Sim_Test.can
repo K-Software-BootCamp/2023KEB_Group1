@@ -1,0 +1,108 @@
+﻿/*@!Encoding:65001*/
+variables
+{
+  msTimer AccTimer;
+  msTimer BrakeTimer;
+  msTimer ErrorTimer;
+  int auto_onoff_value = 0;
+}
+
+on start
+{
+  setTimerCyclic(AccTimer, 200);  // 0.5 초 간격으로 timer 설정
+  setTimerCyclic(BrakeTimer, 100); // 3초에 15 step 각 step은 200ms
+  setTimerCyclic(ErrorTimer,200);
+}
+
+on sysvar sysvar::Input::auto_onoff
+{
+  if(@sysvar::Input::auto_onoff ==1)
+  {
+    auto_onoff_value = @sysvar::Input::auto_onoff;
+    write("auto_onoff value : %d", auto_onoff_value);
+  }
+}
+
+on timer AccTimer
+{
+  int i =0;
+  @sysvar::Output::errorIndicator01 = 0;
+  
+  if(auto_onoff_value == 1)
+  {
+    if(@sysvar::Input::Acc_state < 15)
+    {
+      @sysvar::Input::Acc_state++;
+      if (@sysvar::Input::Acc_state >= 14)
+      {
+        @sysvar::Input::Acc_state =14;
+      }
+      write("@Input::Acc_state value: %d", @sysvar::Input::Acc_state);
+    }
+    
+    @sysvar::Input::Steer_state = 50 * sin(i);
+    i++;
+    if(i % 2 ==0)
+    {
+    @sysvar::Output::errorIndicator01 = 0;
+    }
+    if(i % 2 ==1)
+    {
+      @sysvar::Output::errorIndicator01 = 1;
+    }
+  }
+}
+
+on timer BrakeTimer
+{
+  int j;
+  if(auto_onoff_value == 1)
+  {
+    if(@sysvar::Input::Acc_state ==14)
+    {
+       if(j % 2 ==0)
+    {
+      @sysvar::Input::Brake_state =14;
+      @sysvar::Output::errorIndicator02 =1;
+    }
+    if(j % 2 == 1)
+    {
+      @sysvar::Input::Brake_state =4;
+      @sysvar::Output::errorIndicator02 =0;
+      
+      @sysvar::Input::Steer_state = @sysvar::Input::Steer_state;
+    }
+  }
+}
+j++;
+}
+
+on timer ErrorTimer
+{
+  int j;
+  @sysvar::Output::errorIndicator02 =0;
+  
+  if(@sysvar::Input::Error_state == 1)
+  {
+    if(j % 2 ==0)
+    {
+      @sysvar::Input::Brake_state =12;
+      @sysvar::Output::errorIndicator02 =1;
+      
+    }
+    if(j % 2 == 1)
+    {
+      @sysvar::Input::Brake_state =8;
+      @sysvar::Output::errorIndicator02 =0;
+      
+      
+    }
+    if(@sysvar::Input::Brake_state < 0)
+    {
+      @sysvar::Input::Brake_state =0;
+    }
+    j++;
+  }
+  
+}
+
