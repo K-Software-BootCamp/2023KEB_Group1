@@ -2,12 +2,13 @@
 차량 제어 및 통신 통합 시험, 검증 시스템
 
 ## 🐕‍🦺Service
+![Demo_gif](https://github.com/K-Software-BootCamp/2023KEB_Group1/assets/126951066/c2cd2db0-0a8f-40b2-add3-4bde60c6bb26)
 - MBD기반 Simulink 제어 Model 구축
 - CANoe를 통한 가상 제어기 구현 및 메시지, 시그널 설정 > 통신 시스템 검증
 - Unity를 이용한 차량 시뮬레이션 환경 제공
 
 ## 📦Structure
-Image
+![Document1](https://github.com/K-Software-BootCamp/2023KEB_Group1/assets/126951066/2e872f94-4809-47cf-a799-a87614775c8b)
   
 ## 📁 Directories
 ```
