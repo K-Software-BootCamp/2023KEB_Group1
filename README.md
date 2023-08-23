@@ -10,6 +10,7 @@
 Image
   
 ## 📁 Directories
+```
 📦Project
  ┣ 📂CAPL - 가상 시나리오 생성 CAPL 코드
  ┃ ┣ 📜SimulatorON.can
@@ -29,6 +30,7 @@ Image
  ┣ 📜MBD_Test.cfg - CANoe cfg 파일, 설정 저장
  ┣ 📜MBD_Test.stcfg
  ┗ 📜ProjectSettings.vtesettings
+```
  
 ## 👪👪 Member
 ⚙️ 제어, 설계팀 : 김태영, 김기현, 방상우
