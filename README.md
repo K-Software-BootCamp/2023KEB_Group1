@@ -1,5 +1,7 @@
 # 🚗2023KEB_Group1 VectorMen
-
+<div align="center">
+ <img src="./Images/result.gif" width="540">
+</div>
 - 차량 제어 및 통신 통합 시험, 검증 시스템입니다.
 - 실제 차량에 적용되는 방식처럼 차량 네트워크와 제어기들의 작동을 시험 및 검증할 수 있습니다.
 
@@ -73,13 +75,9 @@
  ┗ 📜기능 명세서.xlsx - 기능 명세서
 ```
 
-## 🚥Process
+## 🚥 Process
 <div align="center">
  <img src="./Images/Process.gif" width="540">
-</div>
-
-<div align="center">
- <img src="./Images/result.gif" width="540">
 </div>
  
 ## 🚀 링크
